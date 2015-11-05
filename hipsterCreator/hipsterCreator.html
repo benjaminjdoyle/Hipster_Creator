@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Hipster Creator</title>
+        <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" integrity="sha384-aUGj/X2zp5rLCbBxumKTCw2Z50WgIr1vs/PFN4praOTvYXWlVyh2UtNUU0KAUhAX" crossorigin="anonymous">
+
+<link rel="stylesheet" type="text/css" href="https://bootswatch.com/darkly/bootstrap.min.css">
+
+        <link rel="stylesheet" href="hipsterCreator.css">
+    </head>
+    <body>
+    <div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+        	<div class="text-center jumbotron">
+        		<h1 class="raleway border">West Side Hipster Generator</h1>
+        		<h4 class="josefin">Create your own smug pal!</h4>
+        		<img class="pano" src="http://img11.deviantart.net/c6a2/i/2012/337/1/0/the_hipsters_of_olympus_by_cookie_kween-d5n05ta.png" alt="hipster pano">
+        	</div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-2">
+        	<button class="btn btn-danger" onclick="createHipster()">Create Hipster</button>
+        </div>
+        <div class="col-md-10">
+        	<input type="text" id="name" placeholder="Enter name Here..">
+        	<input type="text" id="accessories" placeholder="Enter Accessories Here..">
+        	<input type="text" id="motto" placeholder="Enter Motto Here..">
+        	<input type="text" id="habitat" placeholder="Enter habitat Here..">
+        	<select id="attitude">
+        		<option >Attitude</option>
+        		<option value="optimist">Optimist</option>
+        		<option value="pessimist">Pessimist</option>
+        		<option value="nihlist">Nihlist</option>
+        		<option value="narcissist">Narcissist</option>
+        		<option value="altruist">Altruist</option>
+        		<option value="activist">Activist</option>
+        	</select>
+        	<input type="text" id="image" placeholder="Enter Image Url..">
+
+        	<input type="hidden" id="editHipsterId">
+        </div>
+    </div>
+     <div class="row">
+            <div class="col-sm-12">
+              <table id="hipsterTable" style="display: none" class='table table-responsive table-striped'>
+                <tr>
+                  <th>Name</th>
+                  <th>Accessories</th>
+                  <th>Motto</th>
+                  <th>Habitat</th>
+                  <th>Attitude</th>
+                  <th>Image</th>
+                  <!--This is where our edit and delete buttons will go. -->
+                  <th colspan='2'>Admin Tools</th>
+                </tr>
+                <tbody id='result'></tbody>
+              </table>
+
+            </div>
+        </div>
+</div>
+
+		<!-- jquery javascript -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<!-- bootstrap Javascript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+        
+        <script src="hipsterCreator.js"></script>
+    </body>
+</html>

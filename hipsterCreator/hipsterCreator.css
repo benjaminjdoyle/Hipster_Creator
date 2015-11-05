@@ -1,0 +1,22 @@
+@import url(http://fonts.googleapis.com/css?family=Josefin+Sans);
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+
+.raleway {
+	font-family: 'Raleway', sans-serif;
+}
+
+.josefin {
+	font-family: 'Josefin Sans', sans-serif;
+    text-transform:uppercase;
+}
+
+.border {
+	border:3px solid #333;
+    padding:10px;
+}
+
+#pano {
+	width: 100vw;
+	height: auto;
+}
+
